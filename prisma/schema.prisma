@@ -1,0 +1,40 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model Lead {
+  id                  String   @id @default(uuid())
+  source              String   // e.g., "Pricing Form - Premium", "Hero - Strategy Call"
+  
+  // Basic Details
+  name                String
+  email               String
+  phone               String?
+  company             String?
+  website             String?
+  
+  // Business Information (From Pricing & Audit Forms)
+  industry            String?
+  revenue             String?
+  runningAds          String?
+  adBudget            String?
+  
+  // Goals (From Services & Pricing Forms)
+  goal                String?
+  timeline            String?
+  description         String?
+  
+  // Premium Specific (From Pricing Form)
+  marketingSpend      String?
+  expectedRevenueGoal String?
+  teamSize            String?
+
+  createdAt           DateTime @default(now())
+}
