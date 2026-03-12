@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { prisma } from '@/lib/prisma';
+import nodemailer from 'nodemailer';
 
 export async function POST(req: Request) {
     try {
@@ -36,24 +37,32 @@ export async function POST(req: Request) {
             // We gracefully degrade here so the email still gets sent
         }
 
-        // 2. Send Server-Side Email via FormSubmit
+        // 2. Send Server-Side Email using Google SMTP (Nodemailer)
         try {
-            await fetch('https://formsubmit.co/ajax/contact.scalixlabs@gmail.com', {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json",
-                    "Accept": "application/json",
-                    "Referer": "https://scalixlabs.com/",
-                    "Origin": "https://scalixlabs.com"
+            const transporter = nodemailer.createTransport({
+                service: 'gmail',
+                auth: {
+                    user: process.env.EMAIL_USER,
+                    pass: process.env.EMAIL_APP_PASSWORD,
                 },
-                body: JSON.stringify({
-                    _subject: `New Lead from Scalix Labs: ${leadName}`,
-                    ...body
-                })
             });
+
+            // Format body object into readable text
+            const formattedData = Object.entries(body)
+                .map(([key, value]) => `${key}: ${value || "N/A"}`)
+                .join('\n');
+
+            const mailOptions = {
+                from: process.env.EMAIL_USER,
+                to: "contact.scalixlabs@gmail.com",
+                subject: `New Lead from Scalix Labs: ${leadName}`,
+                text: `You have received a new lead from the Scalix Labs website!\n\nDetails:\n-------------------------\n${formattedData}\n-------------------------`,
+            };
+
+            await transporter.sendMail(mailOptions);
         } catch (emailError) {
-            console.error("Failed to send email notification", emailError);
-            // Optionally handle email failure if needed
+            console.error("Failed to send email notification via SMTP", emailError);
+            // We don't throw an error here so the user on the website still sees a success message
         }
 
         return NextResponse.json({ success: true, leadId: leadId }, { status: 200 });
