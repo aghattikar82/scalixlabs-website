@@ -9,7 +9,7 @@ export default function Footer() {
             {/* Subtle background glow */}
             <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-primary/10 blur-[100px] rounded-full pointer-events-none" />
             <div className="container mx-auto px-6 md:px-12 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
                     <div className="md:col-span-2">
                         <Link href="/" className="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2 mb-6">
                             <div className="w-8 h-8 rounded-lg bg-primary shadow-[0_0_15px_rgba(37,99,235,0.5)] flex items-center justify-center">
@@ -61,8 +61,8 @@ export default function Footer() {
                     <div>
                         <h4 className="text-white font-semibold mb-6">Legal</h4>
                         <ul className="space-y-4">
-                            <li><Link href="#" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
-                            <li><Link href="#" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
+                            <li><Link href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+                            <li><Link href="/terms-of-service" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
                         </ul>
                     </div>
                 </div>
