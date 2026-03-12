@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter, Linkedin, Instagram } from "lucide-react";
+import { Twitter, Linkedin, Instagram, Youtube, Facebook, BookOpen, Hash } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -20,15 +20,34 @@ export default function Footer() {
                         <p className="text-gray-400 max-w-sm mb-8 leading-relaxed">
                             We build scalable customer acquisition systems that turn attention into revenue for modern SaaS and Tech companies.
                         </p>
-                        <div className="flex items-center gap-4">
-                            <Link href="#" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/5 hover:border-primary/50 transition-all hover:scale-110">
-                                <Twitter className="w-5 h-5" />
-                            </Link>
-                            <Link href="#" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/5 hover:border-primary/50 transition-all hover:scale-110">
+                        <div className="flex flex-wrap items-center gap-3">
+                            {/* 1. LinkedIn */}
+                            <Link href="https://www.linkedin.com/company/scalixlabs/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-[#0A66C2] hover:bg-white/5 hover:border-[#0A66C2]/50 transition-all hover:scale-110" title="LinkedIn">
                                 <Linkedin className="w-5 h-5" />
                             </Link>
-                            <Link href="#" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/5 hover:border-primary/50 transition-all hover:scale-110">
+                            {/* 2. YouTube */}
+                            <Link href="https://www.youtube.com/@Scalix_Labs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-[#FF0000] hover:bg-white/5 hover:border-[#FF0000]/50 transition-all hover:scale-110" title="YouTube">
+                                <Youtube className="w-5 h-5" />
+                            </Link>
+                            {/* 3. X (Twitter) */}
+                            <Link href="https://x.com/scalixlabs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/5 hover:border-gray-500/50 transition-all hover:scale-110" title="X (Twitter)">
+                                <Twitter className="w-5 h-5" />
+                            </Link>
+                            {/* 4. Medium */}
+                            <Link href="https://medium.com/@a.scalixlabs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/5 hover:border-white/50 transition-all hover:scale-110" title="Medium">
+                                <BookOpen className="w-5 h-5" />
+                            </Link>
+                            {/* 5. Instagram */}
+                            <Link href="https://www.instagram.com/scalix_labs/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-[#E1306C] hover:bg-white/5 hover:border-[#E1306C]/50 transition-all hover:scale-110" title="Instagram">
                                 <Instagram className="w-5 h-5" />
+                            </Link>
+                            {/* 6. Facebook */}
+                            <Link href="https://www.facebook.com/ScalixLabs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-[#1877F2] hover:bg-white/5 hover:border-[#1877F2]/50 transition-all hover:scale-110" title="Facebook">
+                                <Facebook className="w-5 h-5" />
+                            </Link>
+                            {/* 7. Threads */}
+                            <Link href="https://www.threads.com/@scalix_labs" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-white hover:bg-white/5 hover:border-gray-500/50 transition-all hover:scale-110" title="Threads">
+                                <Hash className="w-5 h-5" />
                             </Link>
                         </div>
                     </div>
