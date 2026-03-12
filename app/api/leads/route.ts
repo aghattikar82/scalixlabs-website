@@ -42,7 +42,9 @@ export async function POST(req: Request) {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
-                    "Accept": "application/json"
+                    "Accept": "application/json",
+                    "Referer": "https://scalixlabs.com/",
+                    "Origin": "https://scalixlabs.com"
                 },
                 body: JSON.stringify({
                     _subject: `New Lead from Scalix Labs: ${leadName}`,
