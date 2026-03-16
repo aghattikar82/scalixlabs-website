@@ -4,11 +4,23 @@ import { MessageCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 export default function WhatsAppButton() {
+    const trackWhatsAppClick = () => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        if (typeof window !== "undefined" && typeof (window as any).gtag === "function") {
+            // eslint-disable-next-line @typescript-eslint/no-explicit-any
+            (window as any).gtag('event', 'whatsapp_click', {
+                event_category: 'lead',
+                event_label: 'whatsapp_contact'
+            });
+        }
+    };
+
     return (
         <motion.a
             href="https://wa.me/917386102312?text=Hi%20Scalix%20Labs%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
             target="_blank"
             rel="noopener noreferrer"
+            onClick={trackWhatsAppClick}
             initial={{ scale: 0, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 1, type: "spring", stiffness: 200, damping: 20 }}
