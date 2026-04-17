@@ -38,9 +38,9 @@ export default function Navbar() {
                     <Image
                         src="/logo.png"
                         alt="Scalix Labs"
-                        width={180}
-                        height={45}
-                        className="h-10 w-auto object-contain"
+                        width={240}
+                        height={60}
+                        className="h-14 md:h-16 w-auto object-contain"
                         priority
                     />
                 </Link>

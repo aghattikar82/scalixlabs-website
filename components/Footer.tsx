@@ -16,9 +16,9 @@ export default function Footer() {
                             <Image
                                 src="/logo.png"
                                 alt="Scalix Labs"
-                                width={160}
-                                height={40}
-                                className="h-8 w-auto object-contain"
+                                width={200}
+                                height={50}
+                                className="h-12 w-auto object-contain"
                             />
                         </Link>
                         <p className="text-gray-400 max-w-sm mb-8 leading-relaxed">
