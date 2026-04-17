@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import Authority from "@/components/Authority";
 import Services from "@/components/Services";
+import WebDevHighlight from "@/components/WebDevHighlight";
 import Process from "@/components/Process";
 import Pricing from "@/components/Pricing";
 import Calculator from "@/components/Calculator";
@@ -18,6 +19,7 @@ export default function Home() {
       <Hero />
       <Authority />
       <Services />
+      <WebDevHighlight />
       <Process />
       <Pricing />
       <Calculator />
