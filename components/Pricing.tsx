@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { CheckCircle2, Zap, Rocket, Star, Sparkles } from "lucide-react";
+import { CheckCircle2, Zap, Rocket, Star } from "lucide-react";
 import { useState } from "react";
 import PricingPopup from "./PricingPopup";
 
@@ -10,7 +10,7 @@ const plans = [
         name: "Basic",
         subtitle: "Growth Starter",
         description: "For Businesses Starting Digital Growth",
-        price: "₹29,999",
+        price: "₹17,999",
         period: "/ month",
         features: [
             "Meta Ads Campaign Management",
@@ -35,7 +35,7 @@ const plans = [
         name: "Pro",
         subtitle: "Performance Scale",
         description: "For Businesses Ready to Scale",
-        price: "₹49,999",
+        price: "₹29,999",
         period: "/ month",
         features: [
             "Full Meta Ads Strategy & Optimization",
@@ -62,7 +62,7 @@ const plans = [
         name: "Premium",
         subtitle: "Growth Partner",
         description: "For Brands Seeking Predictable Growth Systems",
-        price: "₹89,999+",
+        price: "₹39,999",
         period: "/ month",
         features: [
             "Complete Performance Mktg. (Meta + Google + YouTube)",
@@ -83,29 +83,6 @@ const plans = [
         color: "text-growth",
         bgAccent: "bg-growth/10",
         border: "border-white/10 hover:border-growth/40",
-        popular: false,
-        headerGlow: ""
-    },
-    {
-        name: "Executive AI Program",
-        subtitle: "Gen AI for Modern Leaders",
-        description: "Executive Program in Gen AI for Modern Leaders",
-        price: "₹44,999",
-        period: " (One-time)",
-        features: [
-            "AI Strategy for Business Growth",
-            "Custom AI Agent Development",
-            "workflow Automation with n8n/Make",
-            "Generative AI Implementation Roadmap",
-            "1-on-1 Consultation for AI Integration",
-            "Post-Program Implementation Support"
-        ],
-        goal: "Equip leaders with tools to integrate Gen AI and automation into business processes.",
-        cta: "Join the Program",
-        icon: Sparkles,
-        color: "text-yellow-400",
-        bgAccent: "bg-yellow-400/10",
-        border: "border-yellow-500/30 shadow-[0_0_20px_rgba(234,179,8,0.1)]",
         popular: false,
         headerGlow: ""
     }
@@ -155,7 +132,7 @@ export default function Pricing() {
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-4 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 items-center">
                     {plans.map((plan, idx) => (
                         <motion.div
                             key={idx}
