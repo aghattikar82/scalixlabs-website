@@ -3,7 +3,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -34,15 +33,11 @@ export default function Navbar() {
                 }`}
         >
             <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
-                <Link href="/" className="flex items-center">
-                    <Image
-                        src="/logo.png"
-                        alt="Scalix Labs"
-                        width={400}
-                        height={100}
-                        className="h-20 md:h-24 w-auto object-contain"
-                        priority
-                    />
+                <Link href="/" className="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2">
+                    <div className="w-8 h-8 rounded-lg bg-primary shadow-[0_0_15px_rgba(37,99,235,0.5)] flex items-center justify-center">
+                        <div className="w-3 h-3 bg-white rounded-full animate-pulse" />
+                    </div>
+                    Scalix<span className="text-gray-400">Labs</span>
                 </Link>
 
                 {/* Desktop Nav */}
