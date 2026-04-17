@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Twitter, Linkedin, Instagram, Youtube, Facebook, BookOpen, Hash } from "lucide-react";
 
 export default function Footer() {
@@ -11,11 +12,14 @@ export default function Footer() {
             <div className="container mx-auto px-6 md:px-12 relative z-10">
                 <div className="grid grid-cols-1 md:grid-cols-5 gap-12 mb-16">
                     <div className="md:col-span-2">
-                        <Link href="/" className="text-2xl font-heading font-bold tracking-tight text-white flex items-center gap-2 mb-6">
-                            <div className="w-8 h-8 rounded-lg bg-primary shadow-[0_0_15px_rgba(37,99,235,0.5)] flex items-center justify-center">
-                                <div className="w-3 h-3 bg-white rounded-full" />
-                            </div>
-                            Scalix<span className="text-gray-400">Labs</span>
+                        <Link href="/" className="flex items-center mb-6">
+                            <Image
+                                src="/logo.png"
+                                alt="Scalix Labs"
+                                width={160}
+                                height={40}
+                                className="h-8 w-auto object-contain"
+                            />
                         </Link>
                         <p className="text-gray-400 max-w-sm mb-8 leading-relaxed">
                             We build scalable customer acquisition systems that turn attention into revenue for modern SaaS and Tech companies.
