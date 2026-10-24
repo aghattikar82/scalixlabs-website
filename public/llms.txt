@@ -1,0 +1,36 @@
+# Scalix Labs
+
+> Scalix Labs is a global web development and custom software engineering agency headquartered in India, serving clients worldwide including the US, UK, UAE, and Europe. We specialize in building high-performance, conversion-focused websites, custom web applications, SaaS platforms, and scalable digital growth systems using modern technologies like Next.js, React, Node.js, and AI-powered tools.
+
+## Core Services
+- [Web Development](https://www.scalixlabs.in/#services): Conversion-focused websites built with Next.js, React, and modern frameworks. High-performance architecture optimized for speed, SEO, and lead generation.
+- [Custom Software Development](https://www.scalixlabs.in/#services): Bespoke web applications, SaaS platforms, CRM systems, and enterprise tools tailored to business requirements.
+- [Performance Marketing](https://www.scalixlabs.in/#services): Full-funnel performance advertising across Google, Meta, and LinkedIn designed to lower acquisition costs and scale ROI.
+- [Lead Generation Systems](https://www.scalixlabs.in/#services): Automated funnels that capture high-intent prospects and nurture them into qualified sales appointments.
+- [SEO & Organic Growth](https://www.scalixlabs.in/#services): Technical SEO audits, on-page optimization, keyword mapping, content architecture, and authority building.
+- [Social Media & Content](https://www.scalixlabs.in/#services): Strategic brand building across LinkedIn, Instagram, YouTube, and other platforms with AI-powered content production.
+
+## Case Studies
+- [Yukta Verse](https://www.scalixlabs.in/work/yuktaverse): Built a complete digital learning platform from scratch — custom-designed conversion architecture, SEO-optimized structure, and integrated lead capture systems. Live at yuktaverse.com.
+
+## Results & Track Record
+- 4,500+ leads generated for clients
+- 150% average client growth rate
+- 12+ campaigns managed
+- Clients across EdTech, SaaS, E-Commerce, Real Estate, Healthcare, and B2B Services
+
+## Pricing
+- Basic (Growth Starter): Starting at $199/month — Meta & Google Ads management, landing pages, lead integration
+- Pro (Performance Scale): Starting at $349/month — Full strategy, retargeting, SEO, social media content
+- Premium (Growth Partner): Starting at $449/month — Complete growth systems with dedicated strategist and AI-powered creative
+
+## Technology Stack
+Next.js, React, TypeScript, Node.js, Tailwind CSS, Prisma, PostgreSQL, Vercel, AI/ML integrations, n8n automation
+
+## Contact
+- Website: https://www.scalixlabs.in
+- Email: contact@scalixlabs.in
+- LinkedIn: https://www.linkedin.com/company/scalixlabs/
+- YouTube: https://www.youtube.com/@Scalix_Labs
+- Twitter/X: https://x.com/scalixlabs
+- Instagram: https://www.instagram.com/scalix_labs/

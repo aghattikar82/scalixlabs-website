@@ -1,28 +1,38 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Monitor, Cpu, Gauge, Shield, Layout, Sparkles } from "lucide-react";
+import { Monitor, Cpu, Gauge, Shield, Layout, Sparkles, Code2, Globe } from "lucide-react";
 
 const features = [
     {
         icon: Layout,
         title: "Modern UI/UX",
-        desc: "High-end designs that capture attention instantly."
+        desc: "High-end designs that capture attention and convert visitors globally."
     },
     {
         icon: Gauge,
         title: "Ultra Fast",
-        desc: "Optimized for speed to reduce bounce rates."
+        desc: "Sub-second load times on global CDN. Zero bounce from slow pages."
     },
     {
         icon: Cpu,
-        title: "Next.js Tech Stack",
-        desc: "Built with the same tech as the world's leading apps."
+        title: "Next.js & React",
+        desc: "Built with the same tech powering the world's leading web apps."
+    },
+    {
+        icon: Code2,
+        title: "Custom Software",
+        desc: "SaaS platforms, CRMs, and enterprise tools built from scratch."
     },
     {
         icon: Shield,
         title: "Secure & Scalable",
-        desc: "Infrastructure that grows with your business."
+        desc: "Cloud-native architecture that grows with your business."
+    },
+    {
+        icon: Globe,
+        title: "SEO & AI Ready",
+        desc: "Schema markup, structured data, and LLM-optimized content built in."
     }
 ];
 
@@ -43,38 +53,38 @@ export default function WebDevHighlight() {
                     >
                         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6">
                             <Sparkles className="w-4 h-4 text-primary" />
-                            <span className="text-sm font-medium text-primary uppercase tracking-wider">New Capability</span>
+                            <span className="text-sm font-medium text-primary uppercase tracking-wider">Development & Engineering</span>
                         </div>
                         <h2 className="text-4xl md:text-5xl font-heading font-bold text-white mb-6">
-                            Websites Engineered for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-400">High Conversion</span>
+                            Websites & Software Engineered for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-400">Global Scale</span>
                         </h2>
                         <p className="text-xl text-gray-400 mb-8 leading-relaxed">
-                            We don&apos;t just build websites. We build <strong className="text-white">revenue engines</strong>. Most agencies focus on how it looks—we focus on how it sells.
+                            We don&apos;t just build websites. We build <strong className="text-white">revenue engines and custom software</strong> for businesses worldwide. From landing pages to full SaaS platforms — engineered with Next.js, React, and modern cloud infrastructure.
                         </p>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
                             {features.map((f, i) => (
                                 <motion.div
                                     key={i}
                                     initial={{ opacity: 0, y: 10 }}
                                     whileInView={{ opacity: 1, y: 0 }}
                                     viewport={{ once: true }}
-                                    transition={{ delay: i * 0.1 }}
+                                    transition={{ delay: i * 0.08 }}
                                     className="p-4 rounded-xl bg-white/[0.03] border border-white/5 hover:border-primary/30 transition-colors group"
                                 >
-                                    <f.icon className="w-6 h-6 text-primary mb-3 group-hover:scale-110 transition-transform" />
-                                    <h4 className="text-white font-semibold mb-1">{f.title}</h4>
-                                    <p className="text-gray-500 text-sm leading-relaxed">{f.desc}</p>
+                                    <f.icon className="w-5 h-5 text-primary mb-3 group-hover:scale-110 transition-transform" />
+                                    <h4 className="text-white font-semibold mb-1 text-sm">{f.title}</h4>
+                                    <p className="text-gray-500 text-xs leading-relaxed">{f.desc}</p>
                                 </motion.div>
                             ))}
                         </div>
 
                         <div className="mt-10">
                             <button
-                                onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Website Development" }))}
+                                onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Website & Software Development" }))}
                                 className="px-8 py-4 rounded-xl bg-primary text-white font-bold hover:bg-primary/90 transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)]"
                             >
-                                Build My Revenue Engine
+                                Start Your Project
                             </button>
                         </div>
                     </motion.div>
@@ -127,7 +137,7 @@ export default function WebDevHighlight() {
                             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
                             className="absolute -bottom-6 -left-6 p-4 rounded-xl bg-growth/90 text-white font-bold shadow-xl z-20"
                         >
-                            SEO Ready
+                            SEO + AI Ready
                         </motion.div>
                     </motion.div>
                 </div>

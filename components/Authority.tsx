@@ -40,8 +40,9 @@ const Counter = ({ value, suffix = "", delay = 0 }: { value: number; suffix?: st
 export default function Authority() {
     const metrics = [
         { label: "Leads Generated", value: 4500, suffix: "+" },
-        { label: "Campaigns Managed", value: 12, suffix: "+" },
+        { label: "Projects Delivered", value: 12, suffix: "+" },
         { label: "Client Growth", value: 150, suffix: "%" },
+        { label: "Countries Served", value: 8, suffix: "+" },
     ];
 
     return (
@@ -49,18 +50,18 @@ export default function Authority() {
             <div className="absolute inset-0 bg-gradient-to-b from-transparent via-primary/5 to-transparent opacity-50 pointer-events-none" />
 
             <div className="container mx-auto px-6 relative z-10">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-12 md:gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/10">
                     {metrics.map((metric, index) => (
                         <motion.div
                             key={index}
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ duration: 0.6, delay: index * 0.2 }}
+                            transition={{ duration: 0.6, delay: index * 0.15 }}
                             className="flex flex-col items-center justify-center pt-8 md:pt-0 first:pt-0"
                         >
                             <Counter value={metric.value} suffix={metric.suffix} delay={index * 200} />
-                            <p className="text-gray-400 font-medium tracking-wide uppercase text-sm">
+                            <p className="text-gray-400 font-medium tracking-wide uppercase text-xs md:text-sm">
                                 {metric.label}
                             </p>
                         </motion.div>

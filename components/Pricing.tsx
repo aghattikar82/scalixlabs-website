@@ -10,7 +10,8 @@ const plans = [
         name: "Basic",
         subtitle: "Growth Starter",
         description: "For Businesses Starting Digital Growth",
-        price: "₹17,999",
+        priceUSD: "$199",
+        priceINR: "₹17,999",
         period: "/ month",
         features: [
             "Meta Ads Campaign Management",
@@ -35,7 +36,8 @@ const plans = [
         name: "Pro",
         subtitle: "Performance Scale",
         description: "For Businesses Ready to Scale",
-        price: "₹29,999",
+        priceUSD: "$349",
+        priceINR: "₹29,999",
         period: "/ month",
         features: [
             "Full Meta Ads Strategy & Optimization",
@@ -62,7 +64,8 @@ const plans = [
         name: "Premium",
         subtitle: "Growth Partner",
         description: "For Brands Seeking Predictable Growth Systems",
-        price: "₹39,999",
+        priceUSD: "$449",
+        priceINR: "₹39,999",
         period: "/ month",
         features: [
             "Complete Performance Mktg. (Meta + Google + YouTube)",
@@ -119,27 +122,27 @@ export default function Pricing() {
                         transition={{ delay: 0.1 }}
                         className="text-4xl md:text-5xl font-heading font-bold text-white mb-6"
                     >
-                        Investment Plans for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-400">Scale</span>
+                        Simple, Scalable <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-400">Pricing</span>
                     </motion.h2>
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        initial={{ opacity: 0 }}
+                        whileInView={{ opacity: 1 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="text-xl text-gray-400 max-w-2xl mx-auto"
                     >
-                        We don&apos;t just sell services. We partner with you to build predictable revenue engines.
+                        Growth plans designed for businesses at every stage. No hidden fees. Custom software projects quoted separately.
                     </motion.p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-4 items-center">
-                    {plans.map((plan, idx) => (
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+                    {plans.map((plan, index) => (
                         <motion.div
-                            key={idx}
-                            initial={{ opacity: 0, y: 40 }}
+                            key={index}
+                            initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: idx * 0.2 }}
+                            transition={{ delay: index * 0.2 }}
                             className={`relative rounded-3xl p-8 bg-white/[0.02] backdrop-blur-md border ${plan.border} transition-all duration-300 flex flex-col h-full`}
                         >
                             {plan.popular && (
@@ -161,10 +164,11 @@ export default function Pricing() {
 
                                 <p className="text-gray-400 text-sm mb-6 h-10">{plan.description}</p>
 
-                                <div className="flex items-baseline gap-1">
-                                    <span className="text-4xl font-heading font-extrabold text-white">{plan.price}</span>
+                                <div className="flex items-baseline gap-2">
+                                    <span className="text-4xl font-heading font-extrabold text-white">{plan.priceUSD}</span>
                                     <span className="text-gray-500 font-medium">{plan.period}</span>
                                 </div>
+                                <p className="text-sm text-gray-500 mt-1">{plan.priceINR} / month for India</p>
                             </div>
 
                             <div className="flex-grow">
@@ -200,15 +204,33 @@ export default function Pricing() {
                     ))}
                 </div>
 
+                {/* Custom Software CTA */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    viewport={{ once: true }}
+                    transition={{ delay: 0.6 }}
+                    className="mt-12 glass-card rounded-2xl p-8 text-center"
+                >
+                    <h3 className="text-xl font-bold text-white mb-2">Need Custom Software or a SaaS Platform?</h3>
+                    <p className="text-gray-400 mb-6">Custom web applications, SaaS platforms, CRM systems, and enterprise tools are quoted based on scope and complexity.</p>
+                    <button
+                        onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Custom Software Inquiry" }))}
+                        className="px-8 py-3 bg-white/5 border border-white/10 hover:border-primary/30 hover:bg-white/10 text-white font-semibold rounded-xl transition-all"
+                    >
+                        Request a Custom Quote →
+                    </button>
+                </motion.div>
+
                 <motion.div
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.8 }}
-                    className="mt-16 text-center"
+                    className="mt-8 text-center"
                 >
                     <p className="text-gray-500 text-sm px-6 py-3 rounded-full border border-white/10 bg-white/[0.02] inline-block">
-                        <strong className="text-gray-400">Note:</strong> Ad spend is separate from management fees. Recommended monthly ad budget varies based on industry and growth goals.
+                        <strong className="text-gray-400">Note:</strong> Ad spend is separate from management fees. Prices may vary based on project scope. All prices in USD; INR pricing available for India-based clients.
                     </p>
                 </motion.div>
 

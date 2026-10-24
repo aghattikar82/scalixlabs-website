@@ -10,8 +10,8 @@ const navLinks = [
     { name: "Our Work", href: "/#work" },
     { name: "Process", href: "/#process" },
     { name: "Pricing", href: "/#pricing" },
-    { name: "Why Us", href: "/#about" },
-    { name: "Contact Us", href: "/#contact" },
+    { name: "FAQs", href: "/#faq" },
+    { name: "Contact", href: "/#contact" },
 ];
 
 export default function Navbar() {
@@ -59,7 +59,7 @@ export default function Navbar() {
                         onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Navbar" }))}
                         className="px-6 py-3 bg-primary hover:bg-primary/90 text-white text-sm font-semibold rounded-full transition-all hover:scale-105 hover:shadow-[0_0_20px_rgba(37,99,235,0.4)]"
                     >
-                        Book a Strategy Call
+                        Free Consultation
                     </button>
                 </div>
 
@@ -96,7 +96,7 @@ export default function Navbar() {
                         }}
                         className="px-6 py-3 bg-primary text-center hover:bg-primary/90 text-white font-semibold rounded-lg mt-2 shadow-[0_0_15px_rgba(37,99,235,0.4)]"
                     >
-                        Book a Strategy Call
+                        Free Consultation
                     </button>
                 </motion.div>
             )}

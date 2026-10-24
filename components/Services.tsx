@@ -2,15 +2,68 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { Target, Users, Monitor, TrendingUp, Share2, Sparkles, X, CheckCircle2, ArrowRight } from "lucide-react";
+import { Target, Users, Monitor, TrendingUp, Share2, Sparkles, X, CheckCircle2, ArrowRight, Code2 } from "lucide-react";
 
 const services = [
     {
+        id: "conversion-websites",
+        title: "Web Development",
+        subtitle: "High-Performance Websites Engineered for Revenue",
+        shortDesc: "Conversion-focused websites built with Next.js, React, and modern frameworks. Designed to rank, load fast, and convert visitors into customers.",
+        description: "Your website should convert — not just look good. We build performance-driven websites designed to capture attention instantly, guide visitors toward action, reduce drop-off, and improve conversion rates. Every site is built with SEO-ready architecture and blazing-fast performance.",
+        icon: Monitor,
+        color: "from-purple-500 to-fuchsia-600",
+        textColor: "text-purple-400",
+        implementTitle: "What's included:",
+        implementItems: [
+            "Custom UI/UX Design & Conversion Strategy",
+            "Next.js / React Development",
+            "Mobile-First Responsive Architecture",
+            "High-Speed Performance Optimization",
+            "SEO-Ready Structure & Schema Markup",
+            "Lead Capture & CRM Integration",
+            "Analytics & Event Tracking Setup",
+            "Deployment on Global CDN (Vercel/AWS)"
+        ],
+        focusTitle: "Result:",
+        focusItems: [],
+        closingLine: "Every page has a purpose. Every element supports growth."
+    },
+    {
+        id: "custom-software",
+        title: "Custom Software Development",
+        subtitle: "Bespoke Web Applications & SaaS Platforms",
+        shortDesc: "Full-stack custom web applications, SaaS platforms, CRM systems, admin dashboards, and enterprise tools — built from scratch for your specific business needs.",
+        description: "Off-the-shelf software doesn't fit every business. We design and develop custom web applications tailored to your exact requirements — from SaaS platforms and CRM systems to internal tools and complex dashboards. Built with modern, scalable architecture.",
+        icon: Code2,
+        color: "from-cyan-400 to-blue-600",
+        textColor: "text-cyan-400",
+        implementTitle: "What we build:",
+        implementItems: [
+            "SaaS Platforms & Multi-tenant Applications",
+            "Custom CRM & ERP Systems",
+            "Admin Dashboards & Internal Tools",
+            "API Development & Third-party Integrations",
+            "Real-time Applications (WebSockets)",
+            "Database Architecture (PostgreSQL, MongoDB)",
+            "Cloud Deployment (AWS, Vercel, GCP)",
+            "Ongoing Maintenance & Support"
+        ],
+        focusTitle: "Tech Stack:",
+        focusItems: [
+            "React, Next.js, TypeScript",
+            "Node.js, Express, tRPC",
+            "PostgreSQL, Prisma, Redis",
+            "Vercel, AWS, Docker"
+        ],
+        closingLine: "Your business logic, our engineering. Purpose-built software that scales."
+    },
+    {
         id: "performance-marketing",
         title: "Performance Marketing",
-        subtitle: "Full-Funnel Performance Advertising Built for Predictable Growth",
+        subtitle: "Full-Funnel Advertising Built for Predictable Growth",
         shortDesc: "Data-driven ad campaigns across Google, Meta, and LinkedIn designed to lower acquisition costs and scale ROI.",
-        description: "We don’t run random ads. We build structured acquisition systems across Google, Meta, and LinkedIn designed to generate measurable revenue impact.",
+        description: "We don't run random ads. We build structured acquisition systems across Google, Meta, and LinkedIn designed to generate measurable revenue impact. Every campaign is optimized for maximum return.",
         icon: Target,
         color: "from-blue-500 to-indigo-600",
         textColor: "text-blue-400",
@@ -58,33 +111,11 @@ const services = [
         closingLine: ""
     },
     {
-        id: "conversion-websites",
-        title: "Conversion-Focused Websites",
-        subtitle: "Web Infrastructure Engineered for Revenue",
-        shortDesc: "High-performance web experiences engineered specifically to turn clicks into revenue and capture attention.",
-        description: "Your website should convert — not just look good. We build performance-driven websites designed to capture attention instantly, guide visitors toward action, reduce drop-off, and improve conversion rates.",
-        icon: Monitor,
-        color: "from-purple-500 to-fuchsia-600",
-        textColor: "text-purple-400",
-        implementTitle: "What’s included:",
-        implementItems: [
-            "UX & Conversion Strategy",
-            "Landing Page Optimization",
-            "High-Speed Performance Architecture",
-            "Lead Capture Integration",
-            "Analytics & Event Tracking",
-            "Funnel-Based Page Structure"
-        ],
-        focusTitle: "Result:",
-        focusItems: [],
-        closingLine: "Every page has a purpose. Every element supports growth."
-    },
-    {
         id: "seo-growth",
         title: "SEO & Organic Growth",
         subtitle: "Long-Term Authority & Sustainable Traffic",
         shortDesc: "Dominate search results with technical SEO and content architectures that build sustainable inbound traffic.",
-        description: "Paid ads drive speed. SEO builds long-term dominance. We design search visibility systems that position your brand in front of high-intent audiences consistently.",
+        description: "Paid ads drive speed. SEO builds long-term dominance. We design search visibility systems that position your brand in front of high-intent audiences consistently — including optimization for AI search engines and LLM recommendations.",
         icon: TrendingUp,
         color: "from-orange-400 to-red-500",
         textColor: "text-orange-400",
@@ -92,88 +123,67 @@ const services = [
         implementItems: [
             "Technical SEO Audits",
             "On-Page Optimization",
-            "Keyword Mapping",
-            "Content Architecture Strategy",
+            "Keyword Mapping & Content Strategy",
+            "Schema Markup & Structured Data",
+            "AI/LLM Search Optimization (GEO)",
             "Authority Building Framework",
-            "Performance Tracking"
+            "Performance Tracking & Analytics"
         ],
         focusTitle: "Goal:",
         focusItems: [
             "Increase qualified organic traffic.",
+            "Get recommended by AI search engines.",
             "Reduce long-term dependency on paid ads."
         ],
         closingLine: ""
     },
     {
-        id: "social-growth",
-        title: "Social Media Growth",
-        subtitle: "Authority Systems, Not Random Posting",
-        shortDesc: "Strategic content systems that build authority, engage your target market, and grow your brand equity.",
-        description: "Social media should build trust and market positioning — not vanity metrics. We create structured content systems that position you as industry leader, engage your target audience, support paid campaigns, and drive inbound inquiries.",
+        id: "social-media",
+        title: "Social Media & Content",
+        subtitle: "Strategic Brand Building Across Digital Platforms",
+        shortDesc: "Build authority and engagement with data-driven social strategies, AI-powered content production, and consistent brand presence.",
+        description: "Your social presence should work as a growth engine. We create strategic content systems that build authority, drive engagement, and generate inbound leads across LinkedIn, Instagram, YouTube, and more.",
         icon: Share2,
-        color: "from-cyan-400 to-blue-500",
-        textColor: "text-cyan-400",
-        implementTitle: "Deliverables:",
+        color: "from-pink-500 to-rose-600",
+        textColor: "text-pink-400",
+        implementTitle: "What's included:",
         implementItems: [
-            "Content Strategy Framework",
-            "Visual Identity Alignment",
-            "Engagement Optimization",
-            "Growth Analysis",
-            "Paid + Organic Integration"
+            "Content Calendar & Strategy",
+            "AI-Powered Creative Production",
+            "LinkedIn Thought Leadership Content",
+            "Instagram & YouTube Strategy",
+            "Community Engagement Framework",
+            "Performance Analytics & Optimization"
         ],
-        focusTitle: "Result:",
-        focusItems: [],
-        closingLine: "Brand authority compounds over time."
-    },
-    {
-        id: "ai-creative",
-        title: "AI-Powered Creative",
-        subtitle: "High-Performance Creative Production Powered by AI",
-        shortDesc: "Leverage cutting-edge AI to test hundreds of ad creatives and find winning variations faster than humanly possible.",
-        description: "Creative is the biggest driver of ad performance. We use advanced AI tools to rapidly produce, test, and optimize:",
-        icon: Sparkles,
-        color: "from-yellow-400 to-orange-500",
-        textColor: "text-yellow-400",
-        implementTitle: "What we produce:",
-        implementItems: [
-            "AI-Generated Video Ads",
-            "Short-Form Social Media Reels",
-            "Static & Carousel Ad Creatives",
-            "High-Converting Ad Copy Variations",
-            "Hook & Angle Testing",
-            "Social Media Content Designs"
-        ],
-        focusTitle: "🎯 What This Means for Your Business:",
+        focusTitle: "Outcome:",
         focusItems: [
-            "Produce multiple variations fast",
-            "Test different messaging angles",
-            "Identify winning creatives quickly",
-            "Reduce creative fatigue",
-            "Improve CTR & conversion rates"
+            "Consistent brand presence.",
+            "Authority in your niche.",
+            "Inbound lead generation."
         ],
-        closingLine: "Creative decisions are made based on data."
+        closingLine: ""
     }
 ];
 
 export default function Services() {
     const [activeService, setActiveService] = useState<string | null>(null);
 
-    // Prevent body scroll when panel is open
     useEffect(() => {
         if (activeService) {
             document.body.style.overflow = "hidden";
         } else {
-            document.body.style.overflow = "unset";
+            document.body.style.overflow = "";
         }
-        return () => {
-            document.body.style.overflow = "unset";
-        };
+        return () => { document.body.style.overflow = ""; };
     }, [activeService]);
 
     const activeData = activeService ? services.find(s => s.id === activeService) : null;
 
     return (
-        <section id="services" className="py-24 relative overflow-hidden bg-[#0A101C]">
+        <section id="services" className="py-24 relative overflow-hidden bg-background border-t border-white/5">
+            <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+            <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-growth/5 blur-[120px] rounded-full pointer-events-none" />
+
             <div className="container mx-auto px-6 max-w-7xl relative z-10">
                 <div className="text-center mb-16">
                     <motion.div
@@ -182,9 +192,10 @@ export default function Services() {
                         viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-6"
                     >
-                        <span className="w-2 h-2 rounded-full bg-primary" />
+                        <Sparkles className="w-4 h-4 text-primary" />
                         <span className="text-sm font-medium text-primary uppercase tracking-wider">Our Services</span>
                     </motion.div>
+
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
@@ -192,16 +203,17 @@ export default function Services() {
                         transition={{ delay: 0.1 }}
                         className="text-4xl md:text-5xl font-heading font-bold text-white mb-6"
                     >
-                        Capabilities Built for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-growth">Scale</span>
+                        Everything You Need to <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-cyan-400">Build & Scale</span>
                     </motion.h2>
+
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
-                        className="text-xl text-gray-400 max-w-2xl mx-auto"
+                        className="text-xl text-gray-400 max-w-3xl mx-auto"
                     >
-                        We deploy full-funnel marketing systems that act as an extension of your growth team.
+                        From custom websites and software to performance marketing and organic growth — we provide end-to-end digital solutions for businesses worldwide.
                     </motion.p>
                 </div>
 
@@ -212,39 +224,31 @@ export default function Services() {
                             initial={{ opacity: 0, y: 30 }}
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true }}
-                            transition={{ delay: index * 0.1, duration: 0.5 }}
-                            whileHover={{ y: -5 }}
-                            className="group relative h-full cursor-pointer"
+                            transition={{ delay: index * 0.1 }}
                             onClick={() => setActiveService(service.id)}
+                            className="group relative glass-card rounded-2xl p-8 cursor-pointer hover:border-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl flex flex-col"
                         >
-                            <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-white/0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity blur-xl z-0" />
-                            <div className="relative z-10 p-8 rounded-2xl bg-white/[0.02] border border-white/10 hover:border-white/20 transition-all h-full flex flex-col backdrop-blur-sm overflow-hidden before:absolute before:inset-0 before:bg-gradient-to-br before:from-white/[0.05] before:to-transparent before:opacity-0 group-hover:before:opacity-100 before:transition-opacity">
+                            <div className={`absolute top-0 right-0 w-32 h-32 bg-gradient-to-br ${service.color} opacity-[0.05] blur-[30px] rounded-full pointer-events-none group-hover:opacity-[0.1] transition-opacity`} />
 
-                                <div className="w-14 h-14 rounded-xl mb-6 flex items-center justify-center bg-white/5 group-hover:scale-110 transition-transform duration-500 relative overflow-hidden">
+                            <div className="relative z-10 flex-grow">
+                                <div className={`w-12 h-12 rounded-xl bg-gradient-to-br ${service.color} bg-opacity-20 flex items-center justify-center mb-6 relative overflow-hidden`}>
                                     <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-20`} />
-                                    <service.icon className="w-7 h-7 text-white relative z-10" />
+                                    <service.icon className="w-6 h-6 text-white relative z-10" />
                                 </div>
+                                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-primary transition-colors">{service.title}</h3>
+                                <p className="text-gray-400 text-sm leading-relaxed">{service.shortDesc}</p>
+                            </div>
 
-                                <h3 className="text-2xl font-semibold text-white mb-4 tracking-tight">{service.title}</h3>
-                                <p className="text-gray-400 leading-relaxed font-light">{service.shortDesc}</p>
-
-                                <div className="mt-auto pt-8">
-                                    <div className="inline-flex items-center text-sm font-medium text-primary group-hover:text-white transition-colors gap-2">
-                                        Learn more
-                                        <motion.span
-                                            className="group-hover:translate-x-1 transition-transform"
-                                        >
-                                            →
-                                        </motion.span>
-                                    </div>
-                                </div>
+                            <div className="mt-6 flex items-center gap-2 text-sm font-medium text-primary relative z-10 group-hover:gap-3 transition-all">
+                                <span>Learn More</span>
+                                <ArrowRight className="w-4 h-4" />
                             </div>
                         </motion.div>
                     ))}
                 </div>
             </div>
 
-            {/* Centered Modal Popup */}
+            {/* Service Detail Modal */}
             <AnimatePresence>
                 {activeData && (
                     <motion.div
@@ -252,28 +256,27 @@ export default function Services() {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={() => setActiveService(null)}
-                        className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-background/80 backdrop-blur-sm"
+                        className="fixed inset-0 z-[100] flex items-start justify-center p-4 pt-20 md:pt-24 bg-background/80 backdrop-blur-sm overflow-y-auto"
                     >
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                            initial={{ opacity: 0, scale: 0.95, y: 20 }}
                             animate={{ opacity: 1, scale: 1, y: 0 }}
-                            exit={{ opacity: 0, scale: 0.9, y: 20 }}
+                            exit={{ opacity: 0, scale: 0.95, y: 20 }}
                             transition={{ type: "spring", stiffness: 300, damping: 25 }}
                             onClick={(e) => e.stopPropagation()}
-                            className="w-full max-w-2xl bg-[#0B1426] border border-white/10 rounded-2xl p-6 md:p-8 relative shadow-[0_0_50px_rgba(0,0,0,0.5)]"
+                            className="w-full max-w-2xl bg-[#0B1426] border border-white/10 rounded-3xl p-8 relative overflow-hidden shadow-[0_0_60px_rgba(0,0,0,0.5)] mb-20"
                         >
-                            {/* Header Gradient Decor */}
-                            <div className={`absolute top-0 right-0 w-full h-48 bg-gradient-to-br ${activeData.color} opacity-10 pointer-events-none blur-3xl`} />
+                            <div className={`absolute top-0 right-0 w-48 h-48 bg-gradient-to-br ${activeData.color} opacity-10 blur-[60px] rounded-full pointer-events-none`} />
 
                             <button
                                 onClick={() => setActiveService(null)}
-                                className="absolute top-6 right-6 p-2 rounded-full bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors z-10"
+                                className="absolute top-6 right-6 p-2 rounded-full bg-white/5 hover:bg-white/10 text-gray-400 hover:text-white transition-colors z-20"
                             >
                                 <X className="w-5 h-5" />
                             </button>
 
-                            <div className="mt-2 mb-8 relative z-10">
-                                <div className={`w-12 h-12 rounded-xl mb-4 flex items-center justify-center bg-white/5 border border-white/10 relative overflow-hidden`}>
+                            <div className="mb-8 relative z-10">
+                                <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${activeData.color} bg-opacity-20 flex items-center justify-center mb-6 relative overflow-hidden`}>
                                     <div className={`absolute inset-0 bg-gradient-to-br ${activeData.color} opacity-20`} />
                                     <activeData.icon className="w-6 h-6 text-white relative z-10" />
                                 </div>
@@ -297,7 +300,7 @@ export default function Services() {
                                     }}
                                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 py-3 px-6 rounded-lg bg-primary hover:bg-primary/90 text-white font-semibold transition-all shadow-[0_0_20px_rgba(37,99,235,0.4)] hover:shadow-[0_0_30px_rgba(37,99,235,0.6)] hover:-translate-y-1 text-sm text-center"
                                 >
-                                    Schedule Growth Consultation
+                                    Get a Free Quote
                                     <ArrowRight className="w-5 h-5" />
                                 </button>
                             </div>

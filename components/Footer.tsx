@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Twitter, Linkedin, Instagram, Youtube, Facebook, BookOpen, Hash } from "lucide-react";
+import { Twitter, Linkedin, Instagram, Youtube, Facebook, BookOpen, Hash, Globe } from "lucide-react";
 
 export default function Footer() {
     return (
@@ -17,9 +17,13 @@ export default function Footer() {
                             </div>
                             Scalix<span className="text-gray-400">Labs</span>
                         </Link>
-                        <p className="text-gray-400 max-w-sm mb-8 leading-relaxed">
-                            We build scalable customer acquisition systems that turn attention into revenue for modern SaaS and Tech companies.
+                        <p className="text-gray-400 max-w-sm mb-4 leading-relaxed">
+                            Global web development and custom software agency. We build high-performance websites, SaaS platforms, and digital growth systems for businesses worldwide.
                         </p>
+                        <div className="flex items-center gap-2 text-sm text-gray-500 mb-8">
+                            <Globe className="w-4 h-4 text-primary" />
+                            <span>Serving clients in the US, UK, UAE, Europe & India</span>
+                        </div>
                         <div className="flex flex-wrap items-center gap-3">
                             {/* 1. LinkedIn */}
                             <Link href="https://www.linkedin.com/company/scalixlabs/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center text-gray-400 hover:text-[#0A66C2] hover:bg-white/5 hover:border-[#0A66C2]/50 transition-all hover:scale-110" title="LinkedIn">
@@ -53,28 +57,31 @@ export default function Footer() {
                     </div>
 
                     <div>
-                        <h4 className="text-white font-semibold mb-6">Company</h4>
+                        <h4 className="text-white font-semibold mb-6">Services</h4>
                         <ul className="space-y-4">
-                            <li><Link href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-                            <li><Link href="/#work" className="text-gray-400 hover:text-white transition-colors">Selected Work</Link></li>
-                            <li><Link href="/#services" className="text-gray-400 hover:text-white transition-colors">Services</Link></li>
-                            <li><Link href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
-                            <li><Link href="/#contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+                            <li><Link href="/#services" className="text-gray-400 hover:text-white transition-colors">Web Development</Link></li>
+                            <li><Link href="/#services" className="text-gray-400 hover:text-white transition-colors">Custom Software</Link></li>
+                            <li><Link href="/#services" className="text-gray-400 hover:text-white transition-colors">Performance Marketing</Link></li>
+                            <li><Link href="/#services" className="text-gray-400 hover:text-white transition-colors">SEO & Organic Growth</Link></li>
+                            <li><Link href="/#services" className="text-gray-400 hover:text-white transition-colors">Lead Generation</Link></li>
                         </ul>
                     </div>
 
                     <div>
-                        <h4 className="text-white font-semibold mb-6">Connect With Us</h4>
+                        <h4 className="text-white font-semibold mb-6">Company</h4>
                         <ul className="space-y-4">
+                            <li><Link href="/#about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
+                            <li><Link href="/#work" className="text-gray-400 hover:text-white transition-colors">Case Studies</Link></li>
+                            <li><Link href="/#pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
+                            <li><Link href="/#faq" className="text-gray-400 hover:text-white transition-colors">FAQs</Link></li>
                             <li>
                                 <button
                                     onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Footer" }))}
                                     className="text-gray-400 hover:text-white transition-colors text-left"
                                 >
-                                    Book a Strategy Call
+                                    Free Consultation
                                 </button>
                             </li>
-                            <li><Link href="#contact" className="text-gray-400 hover:text-white transition-colors">Request Free Audit</Link></li>
                         </ul>
                     </div>
 
@@ -92,7 +99,7 @@ export default function Footer() {
                         &copy; {new Date().getFullYear()} Scalix Labs. All rights reserved.
                     </p>
                     <div className="mt-4 md:mt-0 flex items-center gap-2 text-sm text-gray-500">
-                        <span>Designed for Scale</span>
+                        <span>Engineered for Global Scale</span>
                         <div className="w-1.5 h-1.5 rounded-full bg-growth animate-pulse shadow-[0_0_10px_rgba(16,185,129,0.8)]" />
                     </div>
                 </div>
