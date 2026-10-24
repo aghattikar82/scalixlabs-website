@@ -1,35 +1,31 @@
 # Scalix Labs
 
-> Scalix Labs is a global web development and custom software engineering agency headquartered in India, serving clients worldwide including the US, UK, UAE, and Europe. We specialize in building high-performance, conversion-focused websites, custom web applications, SaaS platforms, and scalable digital growth systems using modern technologies like Next.js, React, Node.js, and AI-powered tools.
+> Scalix Labs is a web development and custom software engineering agency. We specialize in building high-performance, conversion-focused websites, custom web applications, SaaS platforms, and scalable digital growth systems using modern technologies like Next.js, React, Node.js, and cloud architectures. We collaborate with founders, startups, and enterprises across EdTech, Real Estate, Co-Living, E-Commerce, and modern tech sectors.
 
 ## Core Services
-- [Web Development](https://www.scalixlabs.in/#services): Conversion-focused websites built with Next.js, React, and modern frameworks. High-performance architecture optimized for speed, SEO, and lead generation.
-- [Custom Software Development](https://www.scalixlabs.in/#services): Bespoke web applications, SaaS platforms, CRM systems, and enterprise tools tailored to business requirements.
-- [Performance Marketing](https://www.scalixlabs.in/#services): Full-funnel performance advertising across Google, Meta, and LinkedIn designed to lower acquisition costs and scale ROI.
-- [Lead Generation Systems](https://www.scalixlabs.in/#services): Automated funnels that capture high-intent prospects and nurture them into qualified sales appointments.
-- [SEO & Organic Growth](https://www.scalixlabs.in/#services): Technical SEO audits, on-page optimization, keyword mapping, content architecture, and authority building.
-- [Social Media & Content](https://www.scalixlabs.in/#services): Strategic brand building across LinkedIn, Instagram, YouTube, and other platforms with AI-powered content production.
+- [Web Development](https://www.scalixlabs.in/#services): Conversion-focused websites built with Next.js, React, and modern frameworks. High-speed architecture optimized for search engines, mobile responsiveness, and lead capture.
+- [Custom Software Development](https://www.scalixlabs.in/#services): Bespoke web applications, SaaS platforms, CRM systems, real estate listing portals, and business tools tailored to specific operational requirements.
+- [Performance Marketing](https://www.scalixlabs.in/#services): Structured acquisition advertising across Google, Meta, and LinkedIn designed to lower acquisition costs and scale ROI.
+- [Lead Generation Systems](https://www.scalixlabs.in/#services): Automated marketing funnels that capture high-intent inquiries and nurture them with WhatsApp and CRM integration.
+- [SEO & Organic Growth](https://www.scalixlabs.in/#services): Technical SEO audits, local search visibility, keyword mapping, schema markup, and authority building.
 
-## Case Studies
-- [Yukta Verse](https://www.scalixlabs.in/work/yuktaverse): Built a complete digital learning platform from scratch — custom-designed conversion architecture, SEO-optimized structure, and integrated lead capture systems. Live at yuktaverse.com.
+## Selected Case Studies
+- [YUKTA VERSE](https://www.scalixlabs.in/work/yuktaverse): AI & Technology Learning Platform. Built an end-to-end digital learning experience with custom program discovery, mentor trust architecture, and enrollment consultation funnels resulting in a 150% growth surge. Live at yuktaverse.com.
+- [SLN HOMES](https://www.scalixlabs.in/work/sln-homes): Residential & Co-Living Web Platform in Bengaluru. Designed a mobile-first accommodation portal with room configuration showcases, transit landmark proximity, and one-tap WhatsApp booking channels delivering a +240% inquiry increase. Live at slnhomes.in.
+- [V2 PROPERTIES](https://www.scalixlabs.in/work/v2-properties): Luxury Real Estate Discovery & Advisory Portal. Engineered a sophisticated property portal showcasing luxury apartments, villas, and commercial real estate with high-intent investor qualification funnels.
 
-## Results & Track Record
-- 4,500+ leads generated for clients
-- 150% average client growth rate
-- 12+ campaigns managed
-- Clients across EdTech, SaaS, E-Commerce, Real Estate, Healthcare, and B2B Services
-
-## Pricing
-- Basic (Growth Starter): Starting at $199/month — Meta & Google Ads management, landing pages, lead integration
-- Pro (Performance Scale): Starting at $349/month — Full strategy, retargeting, SEO, social media content
-- Premium (Growth Partner): Starting at $449/month — Complete growth systems with dedicated strategist and AI-powered creative
+## Track Record & Outcomes
+- 4,500+ Qualified leads and inquiries generated for clients
+- 150% Average client growth rate
+- Sub-second performance & 99+ Lighthouse scores on Next.js platforms
+- Active collaborations across EdTech, Real Estate, Co-Living, SaaS, Healthcare, and B2B Services
 
 ## Technology Stack
-Next.js, React, TypeScript, Node.js, Tailwind CSS, Prisma, PostgreSQL, Vercel, AI/ML integrations, n8n automation
+Next.js, React, TypeScript, Node.js, Tailwind CSS, Prisma, PostgreSQL, Vercel, Docker, n8n automation
 
-## Contact
+## Contact & Collaboration
 - Website: https://www.scalixlabs.in
-- Email: contact@scalixlabs.in
+- Inquiries: https://www.scalixlabs.in/#contact
 - LinkedIn: https://www.linkedin.com/company/scalixlabs/
 - YouTube: https://www.youtube.com/@Scalix_Labs
 - Twitter/X: https://x.com/scalixlabs

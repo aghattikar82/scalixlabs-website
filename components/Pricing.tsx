@@ -10,8 +10,7 @@ const plans = [
         name: "Basic",
         subtitle: "Growth Starter",
         description: "For Businesses Starting Digital Growth",
-        priceUSD: "$199",
-        priceINR: "₹17,999",
+        price: "₹17,999",
         period: "/ month",
         features: [
             "Meta Ads Campaign Management",
@@ -36,8 +35,7 @@ const plans = [
         name: "Pro",
         subtitle: "Performance Scale",
         description: "For Businesses Ready to Scale",
-        priceUSD: "$349",
-        priceINR: "₹29,999",
+        price: "₹29,999",
         period: "/ month",
         features: [
             "Full Meta Ads Strategy & Optimization",
@@ -64,8 +62,7 @@ const plans = [
         name: "Premium",
         subtitle: "Growth Partner",
         description: "For Brands Seeking Predictable Growth Systems",
-        priceUSD: "$449",
-        priceINR: "₹39,999",
+        price: "₹39,999",
         period: "/ month",
         features: [
             "Complete Performance Mktg. (Meta + Google + YouTube)",
@@ -131,7 +128,7 @@ export default function Pricing() {
                         transition={{ delay: 0.2 }}
                         className="text-xl text-gray-400 max-w-2xl mx-auto"
                     >
-                        Growth plans designed for businesses at every stage. No hidden fees. Custom software projects quoted separately.
+                        Growth plans designed for modern businesses. Custom software & web development projects are quoted based on scope.
                     </motion.p>
                 </div>
 
@@ -165,10 +162,9 @@ export default function Pricing() {
                                 <p className="text-gray-400 text-sm mb-6 h-10">{plan.description}</p>
 
                                 <div className="flex items-baseline gap-2">
-                                    <span className="text-4xl font-heading font-extrabold text-white">{plan.priceUSD}</span>
+                                    <span className="text-4xl font-heading font-extrabold text-white">{plan.price}</span>
                                     <span className="text-gray-500 font-medium">{plan.period}</span>
                                 </div>
-                                <p className="text-sm text-gray-500 mt-1">{plan.priceINR} / month for India</p>
                             </div>
 
                             <div className="flex-grow">
@@ -212,13 +208,15 @@ export default function Pricing() {
                     transition={{ delay: 0.6 }}
                     className="mt-12 glass-card rounded-2xl p-8 text-center"
                 >
-                    <h3 className="text-xl font-bold text-white mb-2">Need Custom Software or a SaaS Platform?</h3>
-                    <p className="text-gray-400 mb-6">Custom web applications, SaaS platforms, CRM systems, and enterprise tools are quoted based on scope and complexity.</p>
+                    <h3 className="text-xl font-bold text-white mb-2">Need Custom Web Applications or Software?</h3>
+                    <p className="text-gray-400 mb-6 max-w-xl mx-auto">
+                        Bespoke portals, real estate showcases, SaaS platforms, CRM systems, and internal tools are tailored to your requirements and milestones. We collaborate flexibly with founders and businesses.
+                    </p>
                     <button
                         onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Custom Software Inquiry" }))}
                         className="px-8 py-3 bg-white/5 border border-white/10 hover:border-primary/30 hover:bg-white/10 text-white font-semibold rounded-xl transition-all"
                     >
-                        Request a Custom Quote →
+                        Request a Project Quote →
                     </button>
                 </motion.div>
 
@@ -230,7 +228,7 @@ export default function Pricing() {
                     className="mt-8 text-center"
                 >
                     <p className="text-gray-500 text-sm px-6 py-3 rounded-full border border-white/10 bg-white/[0.02] inline-block">
-                        <strong className="text-gray-400">Note:</strong> Ad spend is separate from management fees. Prices may vary based on project scope. All prices in USD; INR pricing available for India-based clients.
+                        <strong className="text-gray-400">Note:</strong> Ad spend is separate from management fees. Available to collaborate with teams locally and globally on custom requirements.
                     </p>
                 </motion.div>
 

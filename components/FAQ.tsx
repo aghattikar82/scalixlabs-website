@@ -7,35 +7,27 @@ import { ChevronDown, HelpCircle } from "lucide-react";
 const faqs = [
     {
         question: "What services does Scalix Labs offer?",
-        answer: "Scalix Labs offers comprehensive digital services including custom web development (using Next.js, React, and modern frameworks), custom software development (SaaS platforms, CRM systems, enterprise tools), performance marketing (Google, Meta, LinkedIn Ads), automated lead generation systems, SEO & organic growth strategies, and social media content production. We serve clients globally across the US, UK, UAE, Europe, Australia, and India."
+        answer: "Scalix Labs offers comprehensive digital engineering and growth services including custom web development (using Next.js, React, and modern full-stack frameworks), custom software development (SaaS platforms, CRM systems, web applications), performance marketing (Google & Meta Ads), automated lead generation systems, and SEO & organic search growth. We collaborate with founders, startups, and established enterprises."
     },
     {
-        question: "Does Scalix Labs work with international clients outside India?",
-        answer: "Absolutely! Scalix Labs actively serves clients worldwide. We have experience working with businesses across the United States, United Kingdom, United Arab Emirates, Europe, Australia, Singapore, and Canada. Our team operates across time zones and uses modern collaboration tools to provide seamless communication and project management for international engagements."
+        question: "What industries do you have experience in?",
+        answer: "We have proven case studies and technical expertise across EdTech (e.g., YUKTA VERSE), Real Estate & Co-Living (e.g., SLN Homes Bengaluru, V2 Properties luxury residences), SaaS & tech platforms, E-Commerce, and B2B services."
     },
     {
         question: "What technologies do you use for web and software development?",
-        answer: "We specialize in modern, production-grade technologies: Next.js and React for frontend development, TypeScript for type-safe code, Node.js and Express for backend APIs, Tailwind CSS for styling, Prisma ORM with PostgreSQL for databases, Vercel and AWS for deployment, and Docker for containerization. We also integrate AI/ML capabilities and workflow automation tools like n8n."
+        answer: "We specialize in modern, production-grade technologies: Next.js and React for frontend architecture, TypeScript for rock-solid codebases, Node.js for backend APIs, Tailwind CSS for styling, Prisma ORM with PostgreSQL for databases, and Vercel/AWS for global CDN deployment. We also integrate automation tools and AI workflows."
     },
     {
-        question: "How much does it cost to build a website or custom software?",
-        answer: "Our managed growth plans start from $199/month (₹17,999/month) for basic campaigns and landing pages. Pro plans with full marketing strategy start at $349/month (₹29,999/month). Premium growth partner packages start at $449/month (₹39,999/month) with dedicated strategists. Custom software development projects (SaaS, CRM, enterprise tools) are quoted based on scope and complexity — reach out for a free consultation and estimate."
+        question: "Can you build custom platforms, portals, or real estate websites?",
+        answer: "Yes, absolutely. We design and develop custom portals, listing showcases, co-living booking engines, SaaS platforms, and internal business tools from scratch. We handle UI/UX design, mobile responsiveness, fast database queries, and direct lead capture integrations like WhatsApp and CRM webhooks."
     },
     {
-        question: "Can you build a SaaS platform or custom web application from scratch?",
-        answer: "Yes, that's one of our core strengths. We design and develop complete SaaS platforms, multi-tenant applications, CRM systems, admin dashboards, internal business tools, and complex web applications from the ground up. We handle everything from architecture planning and UI/UX design to full-stack development, API integrations, database design, cloud deployment, and ongoing maintenance."
+        question: "What results have your platforms achieved for clients?",
+        answer: "Our platforms are engineered for tangible business outcomes: YUKTA VERSE achieved an initial 150% growth surge in learner engagement, SLN Homes generated a +240% increase in inbound room inquiries and tour bookings with sub-second page speeds, and V2 Properties established an elite luxury real estate portal that captures high-intent investor prospects."
     },
     {
-        question: "What results have you achieved for clients?",
-        answer: "Scalix Labs has generated over 4,500+ qualified leads for clients, managed 12+ growth campaigns, and achieved an average client growth rate of 150%. Notable projects include building the Yukta Verse digital learning platform from scratch — a complete web platform with custom-designed conversion architecture, SEO-optimized structure, and integrated lead capture systems that went live at yuktaverse.com."
-    },
-    {
-        question: "How do you ensure website performance and SEO?",
-        answer: "Every website we build follows performance-first principles: server-side rendering with Next.js for fast initial loads, optimized images and lazy loading, minimal JavaScript bundles, global CDN deployment via Vercel's edge network, comprehensive Schema.org structured data, semantic HTML, proper meta tags, XML sitemaps, and technical SEO best practices. Our sites consistently achieve 95+ Lighthouse performance scores."
-    },
-    {
-        question: "What is your development process like?",
-        answer: "Our process follows four phases: (1) ATTRACT — we research your market and plan the traffic strategy; (2) CAPTURE — we design and build conversion-optimized digital assets; (3) NURTURE — we implement follow-up systems and engagement automation; (4) SCALE — we analyze data, optimize performance, and scale what works. Every project includes regular check-ins, transparent reporting, and iterative improvements."
+        question: "How do we get started with Scalix Labs?",
+        answer: "You can book a free strategy call or fill out the contact form. We will review your goals, examine your current setup, and provide an actionable growth roadmap along with transparent scope and milestones."
     }
 ];
 
@@ -75,7 +67,7 @@ export default function FAQ() {
                         transition={{ delay: 0.2 }}
                         className="text-lg text-gray-400 max-w-2xl mx-auto"
                     >
-                        Everything you need to know about working with Scalix Labs.
+                        Everything you need to know about partnering and engineering with Scalix Labs.
                     </motion.p>
                 </div>
 

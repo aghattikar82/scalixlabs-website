@@ -5,24 +5,24 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
     {
-        quote: "Scalix Labs built our entire platform from scratch. The performance and conversion rates exceeded our expectations by 150%. Their technical expertise in Next.js is outstanding.",
-        name: "Yukta Verse",
-        role: "EdTech Platform",
+        quote: "Scalix Labs built our entire digital learning platform from scratch. The performance, UI clarity, and mobile experience exceeded our expectations by 150%. Their Next.js engineering is top-notch.",
+        name: "YUKTA VERSE",
+        role: "EdTech & Career Platform",
         metric: "150% Growth",
         rating: 5,
     },
     {
-        quote: "The team at Scalix Labs understands both technology and business. They didn't just build us a website — they built a revenue engine that consistently generates qualified leads.",
-        name: "B2B Client",
-        role: "SaaS Company",
-        metric: "3x Lead Volume",
+        quote: "They developed a blazing-fast, localized digital presence for our properties in Bengaluru. Instant WhatsApp inquiries and tour booking requests increased significantly right after launch.",
+        name: "SLN Homes",
+        role: "Residential & Co-Living Spaces",
+        metric: "+240% Inquiries",
         rating: 5,
     },
     {
-        quote: "Working with an international team was seamless. The communication, code quality, and delivery timelines were all exceptional. Highly recommend for any web development project.",
-        name: "Corporate Client",
-        role: "Enterprise Services",
-        metric: "On-time Delivery",
+        quote: "The luxury property showcase platform was engineered with precision. Dynamic filtering, premium architectural UI, and direct developer pricing consultation funnels operate smoothly.",
+        name: "V2 Properties",
+        role: "Luxury Real Estate Consultancy",
+        metric: "High-Intent Leads",
         rating: 5,
     },
 ];
@@ -76,14 +76,14 @@ export default function Testimonials() {
                                 ))}
                             </div>
 
-                            <p className="text-gray-300 leading-relaxed mb-8 flex-grow relative z-10">
+                            <p className="text-gray-300 leading-relaxed mb-8 flex-grow relative z-10 text-sm md:text-base">
                                 &ldquo;{testimonial.quote}&rdquo;
                             </p>
 
                             <div className="flex items-center justify-between pt-6 border-t border-white/5 relative z-10">
                                 <div>
                                     <p className="text-white font-semibold">{testimonial.name}</p>
-                                    <p className="text-gray-500 text-sm">{testimonial.role}</p>
+                                    <p className="text-gray-500 text-xs">{testimonial.role}</p>
                                 </div>
                                 <span className="px-3 py-1 rounded-full bg-growth/10 text-growth text-xs font-bold border border-growth/20">
                                     {testimonial.metric}

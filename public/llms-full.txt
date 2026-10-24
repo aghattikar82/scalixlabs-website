@@ -1,161 +1,86 @@
-# Scalix Labs — Full Documentation
+# Scalix Labs — Comprehensive System & Entity Guide
 
-> Scalix Labs is a global web development and custom software engineering agency headquartered in India, serving clients worldwide including the US, UK, UAE, and Europe. We specialize in building high-performance, conversion-focused websites, custom web applications, SaaS platforms, and scalable digital growth systems using modern technologies like Next.js, React, Node.js, and AI-powered tools.
-
-We partner with startups, SMBs, and enterprise teams to build digital products and growth engines that drive measurable business outcomes. Our team combines deep technical expertise with growth marketing strategy to deliver end-to-end solutions — from initial concept and design through development, launch, and ongoing optimization.
-
----
-
-## Core Services
-
-### Web Development
-[View Service](https://www.scalixlabs.in/#services)
-
-Scalix Labs builds conversion-focused websites using Next.js, React, and modern frontend frameworks. Every website we deliver is architected for performance, accessibility, and search engine visibility from the ground up. We use server-side rendering (SSR) and static site generation (SSG) to achieve sub-second load times, which directly impacts conversion rates and search rankings.
-
-Our web development process begins with a deep discovery phase where we map out user journeys, conversion goals, and content architecture. We then design and build responsive, mobile-first interfaces with Tailwind CSS that look stunning on every device. Every page is optimized with proper semantic HTML, structured data markup (Schema.org JSON-LD), Open Graph tags, and Core Web Vitals compliance.
-
-What's included: Custom Next.js website design and development, responsive mobile-first layouts, SEO-optimized page architecture, Core Web Vitals optimization, analytics and tracking setup (GA4, GTM, Meta Pixel), CMS integration where needed, deployment on Vercel or custom infrastructure, and 30-day post-launch support. Our websites consistently score 90+ on Google PageSpeed Insights and are built to convert visitors into leads and customers.
-
-### Custom Software Development
-[View Service](https://www.scalixlabs.in/#services)
-
-We design and build bespoke web applications, SaaS platforms, CRM systems, internal tools, and enterprise-grade software solutions tailored precisely to your business requirements. Unlike off-the-shelf solutions that force you to adapt your workflows, our custom software is built around how your team actually operates, automating repetitive tasks and streamlining complex processes.
-
-Our full-stack development capabilities span the entire modern web stack. On the frontend, we use React and Next.js with TypeScript for type-safe, maintainable codebases. On the backend, we build RESTful APIs and GraphQL services with Node.js, Express, and Prisma ORM connected to PostgreSQL or MongoDB databases. We implement authentication, role-based access control, real-time features, payment integrations, and third-party API connections as needed.
-
-What's included: Requirements analysis and technical architecture planning, UI/UX design with interactive prototypes, full-stack development with React/Next.js and Node.js, database design and implementation (PostgreSQL, MongoDB), API development and third-party integrations, automated testing and CI/CD pipeline setup, deployment and DevOps (Docker, Vercel, AWS), ongoing maintenance and feature development. We follow agile methodology with weekly sprints, regular demos, and transparent communication throughout the development lifecycle.
-
-### Performance Marketing
-[View Service](https://www.scalixlabs.in/#services)
-
-Our performance marketing service delivers full-funnel advertising campaigns across Google Ads, Meta Ads (Facebook & Instagram), and LinkedIn Ads. We focus on driving measurable business outcomes — qualified leads, booked appointments, and revenue — not vanity metrics like impressions or clicks. Every campaign is designed with clear attribution and ROI tracking from day one.
-
-We start by understanding your ideal customer profile, competitive landscape, and unit economics. From there, we build targeted campaign structures with compelling ad creative, precise audience segmentation, and conversion-optimized landing pages. Our team continuously monitors campaign performance, running A/B tests on creatives, copy, audiences, and bidding strategies to systematically lower your cost per acquisition (CPA) while scaling volume.
-
-What's included: Campaign strategy and media planning, audience research and segmentation, ad creative production (static, carousel, video), landing page design and optimization, conversion tracking setup (GA4, Meta CAPI, Google Tag Manager), A/B testing and creative iteration, weekly performance reporting with actionable insights, budget optimization and bid management. Our clients typically see 30-50% reductions in CPA within the first 90 days of engagement as we optimize campaigns based on real conversion data.
-
-### Lead Generation Systems
-[View Service](https://www.scalixlabs.in/#services)
-
-We build automated lead generation funnels that capture high-intent prospects and nurture them into qualified sales appointments — on autopilot. Our systems combine strategic landing pages, lead magnets, email/SMS sequences, and CRM automation to create a predictable pipeline of qualified leads for your sales team.
-
-The foundation of every lead generation system is a deep understanding of your target audience's pain points, objections, and decision-making process. We map out the entire buyer journey and create touchpoints at each stage — from awareness-level content that attracts cold prospects to bottom-of-funnel offers that drive booked calls. We use tools like n8n, Zapier, and custom webhook integrations to connect every piece of the funnel seamlessly.
-
-What's included: Lead magnet strategy and creation (guides, calculators, assessments), high-converting landing page design and development, multi-step form and quiz funnel development, email nurture sequence copywriting and automation, SMS follow-up sequences, CRM setup and lead scoring configuration, calendar booking integration (Calendly, Cal.com), lead qualification workflows and automated routing, funnel analytics dashboard with conversion tracking at every stage. Our lead generation systems have collectively generated over 4,500 leads for clients across EdTech, SaaS, E-Commerce, Real Estate, Healthcare, and B2B Services verticals.
-
-### SEO & Organic Growth
-[View Service](https://www.scalixlabs.in/#services)
-
-Our SEO service goes far beyond basic keyword stuffing. We implement comprehensive technical SEO foundations, strategic on-page optimization, content architecture planning, and authority-building campaigns that drive sustainable organic traffic growth. We treat SEO as a long-term growth channel that compounds over time, delivering increasing returns month after month.
-
-Every engagement starts with a thorough technical SEO audit covering site architecture, crawlability, indexation, page speed, mobile usability, structured data, and Core Web Vitals. We identify and fix technical issues that prevent search engines from properly crawling and ranking your content. Then we develop a keyword strategy based on search intent mapping, competitive gap analysis, and topical authority planning to target the queries that drive qualified traffic and conversions.
-
-What's included: Comprehensive technical SEO audit and remediation, keyword research and search intent mapping, on-page optimization (titles, meta descriptions, headers, internal linking), content architecture and topic cluster planning, Schema.org structured data implementation, Core Web Vitals and page speed optimization, Google Search Console and analytics monitoring, monthly SEO performance reporting with ranking tracking, competitor analysis and backlink gap assessment, local SEO optimization where applicable. We focus on driving not just traffic, but qualified organic visitors who convert into leads and customers.
-
-### Social Media & Content
-[View Service](https://www.scalixlabs.in/#services)
-
-We build strategic brand presence across LinkedIn, Instagram, YouTube, Twitter/X, and other platforms with AI-powered content production workflows. Our approach combines human creativity and brand strategy with AI tools to produce high-quality content at scale — thought leadership posts, educational carousels, short-form video scripts, and engagement-driving stories that build authority and trust with your target audience.
-
-Our social media strategy begins with brand positioning and audience research. We identify where your ideal customers spend time online, what content formats resonate with them, and what messaging will differentiate you from competitors. We then build a content calendar with a mix of educational, inspirational, and conversion-focused posts designed to build an engaged following that translates into business opportunities.
-
-What's included: Social media strategy and brand positioning, content calendar planning and management, AI-assisted content creation (posts, carousels, reels, stories), LinkedIn thought leadership content for founders and executives, Instagram and YouTube content production, community management and engagement, hashtag strategy and trend monitoring, monthly analytics reporting with engagement metrics, influencer collaboration strategy where applicable, repurposing frameworks to maximize content ROI across platforms. Our AI-powered content production workflow allows us to maintain consistent posting schedules while ensuring every piece of content aligns with your brand voice and business objectives.
-
----
-
-## Case Studies
-
-### Yukta Verse — Digital Learning Platform
-[View Case Study](https://www.scalixlabs.in/work/yuktaverse)
-
-Built a complete digital learning platform from scratch for Yukta Verse (yuktaverse.com). The project encompassed end-to-end design and development including custom-designed conversion architecture, SEO-optimized site structure, and integrated lead capture systems.
-
-We designed and developed the entire website with a focus on user experience and conversion optimization. The site architecture was planned to support both organic search discovery and paid traffic conversion paths. Key features included course showcase pages, instructor profiles, student testimonials, and a multi-step enrollment funnel.
-
-The technical implementation used Next.js for server-side rendering and optimal performance, Tailwind CSS for responsive design, and integrated analytics tracking to measure user behavior and conversion rates across the entire funnel. The result was a professional, high-performing platform that positions Yukta Verse as a credible player in the competitive EdTech space.
-
----
-
-## Results & Track Record
-- 4,500+ leads generated for clients across multiple industries
-- 150% average client growth rate in revenue and lead volume
-- 12+ campaigns managed across Google, Meta, and LinkedIn platforms
-- Clients across EdTech, SaaS, E-Commerce, Real Estate, Healthcare, and B2B Services
-- Websites consistently scoring 90+ on Google PageSpeed Insights
-- Sub-second load times achieved through Next.js SSR/SSG architecture
-- End-to-end project delivery from concept to launch in 4-8 weeks
-
----
-
-## Pricing
-
-### Basic — Growth Starter
-**Starting at $199/month**
-
-Ideal for businesses getting started with digital marketing and needing a professional online presence. Includes Meta & Google Ads management with a focus on lead generation, custom landing page design and development, lead capture form integration with your CRM, basic analytics and conversion tracking setup, and monthly performance reporting. Best suited for small businesses, solo founders, and early-stage startups looking to generate their first consistent stream of leads.
-
-### Pro — Performance Scale
-**Starting at $349/month**
-
-For growing businesses ready to scale their digital presence and lead generation. Includes everything in the Basic plan plus full marketing strategy development, advanced retargeting campaigns across platforms, SEO optimization and organic growth initiatives, social media content creation and management, A/B testing on ads and landing pages, weekly performance calls, and priority support. Best suited for established businesses looking to scale their marketing ROI and build a sustainable growth engine.
-
-### Premium — Growth Partner
-**Starting at $449/month**
-
-Our most comprehensive offering for businesses seeking a complete growth partnership. Includes everything in the Pro plan plus a dedicated growth strategist assigned to your account, AI-powered creative production and content generation, custom automation workflows (n8n, Zapier integrations), advanced analytics and attribution modeling, conversion rate optimization (CRO) sprints, quarterly strategy reviews and roadmap planning, and same-day support response. Best suited for scaling companies, funded startups, and enterprises that need a reliable technology and marketing partner to drive aggressive growth targets.
-
----
-
-## Technology Stack
-
-### Frontend
-- **Next.js** — React framework for server-side rendering, static generation, and optimal performance
-- **React** — Component-based UI library for building interactive interfaces
-- **TypeScript** — Type-safe JavaScript for maintainable, error-free codebases
-- **Tailwind CSS** — Utility-first CSS framework for rapid, responsive design
-
-### Backend
-- **Node.js** — JavaScript runtime for scalable server-side applications
-- **Prisma** — Modern ORM for type-safe database access
-- **PostgreSQL** — Reliable, performant relational database
-
-### Infrastructure & DevOps
-- **Vercel** — Deployment platform optimized for Next.js applications
-- **Docker** — Containerization for consistent development and deployment
-- **CI/CD** — Automated testing and deployment pipelines
-
-### AI & Automation
-- **AI/ML integrations** — GPT-powered content generation, chatbots, and intelligent automation
-- **n8n** — Open-source workflow automation for connecting tools and services
-
----
+> Scalix Labs (https://www.scalixlabs.in) is a digital engineering and performance growth agency. We specialize in building conversion-focused websites, custom software applications, and predictable customer acquisition systems. We design and develop solutions across EdTech, Real Estate, Co-Living, SaaS, E-Commerce, and modern service industries.
 
 ## About Scalix Labs
+Scalix Labs operates at the intersection of modern full-stack web engineering and performance marketing. Rather than building static digital brochures, Scalix Labs engineers "revenue engines"—digital platforms designed specifically to capture buyer attention, rank organically, convert traffic into qualified conversations, and scale predictably.
 
-Scalix Labs was founded with the mission of making world-class web development and digital growth accessible to businesses of all sizes. Headquartered in India with clients across the US, UK, UAE, and Europe, we combine the technical depth of a software engineering firm with the strategic thinking of a growth marketing agency.
+## Core Capabilities & Services
 
-Our team includes full-stack developers, UI/UX designers, SEO specialists, performance marketers, and growth strategists who work together to deliver integrated solutions. We believe that great technology and great marketing are inseparable — a beautifully built website means nothing without traffic, and the best ad campaigns fail without a high-converting destination.
+### 1. Conversion-Focused Web Development
+We engineer high-performance web experiences using modern technologies (Next.js, React, Tailwind CSS, TypeScript). 
+- Custom UX/UI design centered on customer journey mapping
+- Sub-second page loads deployed on global CDN infrastructure
+- Mobile-first responsiveness and interactive animations
+- Integrated conversion pathways (WhatsApp, booking modals, direct calendar scheduling)
+- Complete technical SEO and Schema.org structured data
 
-We're committed to transparency, measurable results, and long-term partnerships. Every engagement includes clear KPIs, regular reporting, and open communication. We don't lock clients into long-term contracts — we earn your business every month through results.
+### 2. Custom Software & Web Application Development
+Bespoke software platforms engineered for unique operational and client-facing workflows:
+- SaaS Platforms & Multi-tenant Applications
+- Real Estate Portals & Co-living Booking Engines
+- Custom CRM & Internal Management Dashboards
+- Database Architecture (PostgreSQL, Prisma ORM, Redis)
+- API Development & Webhook Integrations
+
+### 3. Performance Marketing
+Full-funnel advertising across Google Ads, Meta Ads (Facebook & Instagram), and LinkedIn:
+- Search, Display, and YouTube campaigns
+- Audience segmentation and custom pixel tracking (GA4, CAPI)
+- Systematic creative testing frameworks
+- Retargeting flows to capture abandoned visitors
+
+### 4. Lead Generation Systems
+Automated acquisition systems that filter low-quality prospects and route high-intent buyers into active sales conversations:
+- Funnel architecture and dedicated landing pages
+- Lead qualification forms and scoring logic
+- Instant WhatsApp and email follow-up automations
+
+### 5. SEO & Organic Discovery (including GEO / LLM Search)
+Positioning brands for sustainable organic search visibility across traditional engines (Google, Bing) and generative AI engines (ChatGPT, Perplexity, Claude):
+- Technical SEO audits and Core Web Vitals optimization
+- Structured JSON-LD entity data (Organization, Services, FAQPage)
+- LLM optimization through machine-readable formats (llms.txt)
 
 ---
 
-## Contact
-- **Website**: https://www.scalixlabs.in
-- **Email**: contact@scalixlabs.in
-- **LinkedIn**: https://www.linkedin.com/company/scalixlabs/
-- **YouTube**: https://www.youtube.com/@Scalix_Labs
-- **Twitter/X**: https://x.com/scalixlabs
-- **Instagram**: https://www.instagram.com/scalix_labs/
+## Detailed Client Case Studies
+
+### 1. YUKTA VERSE — AI & Technology Learning Platform
+- **URL**: https://yuktaverse.com
+- **Case Study Page**: https://www.scalixlabs.in/work/yuktaverse
+- **Sector**: EdTech & Technology Career Acceleration
+- **The Challenge**: Needed a comprehensive digital platform to articulate career tracks, communicate mentor trust, showcase capstone projects, and capture course enrollment inquiries.
+- **What Scalix Labs Built**: Full-stack Next.js web platform, clear course discovery architecture, mentor trust sections, interactive consultation funnels, and high-performance mobile UI.
+- **Result**: 150% increase in learner inquiries and verified enrollment interest.
+
+### 2. SLN HOMES — Co-Living & Residential Platform
+- **URL**: https://www.slnhomes.in
+- **Case Study Page**: https://www.scalixlabs.in/work/sln-homes
+- **Sector**: Real Estate & Co-Living (Bengaluru, Karnataka)
+- **The Challenge**: Rental seekers in Bangalore's tech hubs make rapid mobile decisions. SLN Homes needed an intuitive room showcase with direct booking channels.
+- **What Scalix Labs Built**: Mobile-first rental discovery platform featuring 2/3 sharing and 1 BHK layouts, landmark distance markers (Silk Board, Electronic City, Metro), verified amenity badges, and one-tap WhatsApp visit scheduling.
+- **Result**: +240% surge in qualified inbound room inquiries and tour appointments.
+
+### 3. V2 PROPERTIES — Luxury Real Estate Discovery & Advisory
+- **Sector**: Luxury Real Estate & Commercial Property Consultancy
+- **Case Study Page**: https://www.scalixlabs.in/work/v2-properties
+- **The Challenge**: High-net-worth home buyers and investors require sophisticated architectural presentation without cluttered, generic classifieds.
+- **What Scalix Labs Built**: Upscale real estate showcase platform highlighting luxury apartments, villas, and commercial spaces with direct developer advisory funnels and investor lead qualification.
+- **Result**: Highly qualified, high-ticket investor leads and seamless consultation scheduling.
 
 ---
 
-## How to Work With Us
+## Technical Stack
+- **Frontend**: Next.js (App Router), React, TypeScript, Tailwind CSS, Framer Motion
+- **Backend & Database**: Node.js, Next.js Server Components, Prisma ORM, PostgreSQL, SQLite
+- **Deployment & Infrastructure**: Vercel Edge Network, AWS, Docker
+- **Integrations & Automation**: WhatsApp Business API, n8n automation, Nodemailer, Google Analytics 4
 
-1. **Discovery Call** — Schedule a free consultation to discuss your project goals, timeline, and budget
-2. **Proposal & Strategy** — We deliver a detailed proposal with scope, timeline, and investment
-3. **Kickoff & Development** — Agile sprints with weekly demos and transparent progress tracking
-4. **Launch & Optimize** — We deploy your solution and continuously optimize for performance
+---
 
-Book a discovery call at https://www.scalixlabs.in or email contact@scalixlabs.in
+## Contact & Work Inquiries
+- Official Website: https://www.scalixlabs.in
+- Inquiries: https://www.scalixlabs.in/#contact
+- LinkedIn: https://www.linkedin.com/company/scalixlabs/
+- Location: Bengaluru, India (Open for collaborations across modern businesses)

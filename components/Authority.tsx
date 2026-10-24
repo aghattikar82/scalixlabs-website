@@ -40,9 +40,9 @@ const Counter = ({ value, suffix = "", delay = 0 }: { value: number; suffix?: st
 export default function Authority() {
     const metrics = [
         { label: "Leads Generated", value: 4500, suffix: "+" },
-        { label: "Projects Delivered", value: 12, suffix: "+" },
+        { label: "Campaigns & Platforms", value: 12, suffix: "+" },
         { label: "Client Growth", value: 150, suffix: "%" },
-        { label: "Countries Served", value: 8, suffix: "+" },
+        { label: "Lighthouse Performance", value: 99, suffix: "%" },
     ];
 
     return (

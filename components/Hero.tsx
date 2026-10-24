@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowRight, BarChart2, Globe } from "lucide-react";
+import { ArrowRight, BarChart2, Sparkles } from "lucide-react";
 import { useEffect, useState } from "react";
 
 export default function Hero() {
@@ -58,8 +58,8 @@ export default function Hero() {
                         transition={{ duration: 0.8, ease: "easeOut" }}
                         className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card mb-8 border border-primary/30"
                     >
-                        <Globe className="w-4 h-4 text-growth" />
-                        <span className="text-sm font-medium text-gray-300">Serving Clients Worldwide — US, UK, UAE, Europe & India</span>
+                        <Sparkles className="w-4 h-4 text-growth" />
+                        <span className="text-sm font-medium text-gray-300">Modern Digital Growth & Custom Software Engineering</span>
                     </motion.div>
 
                     <motion.h1
@@ -89,7 +89,7 @@ export default function Hero() {
                         transition={{ duration: 0.8, delay: 0.4 }}
                         className="text-lg md:text-xl text-gray-400 max-w-3xl mb-12 leading-relaxed"
                     >
-                        We build high-performance websites, custom web applications, and scalable growth systems for businesses worldwide. From Next.js websites to full SaaS platforms — engineered to convert and scale.
+                        We build high-performance websites, custom web applications, and scalable growth systems that turn traffic into qualified revenue. Open for collaborations across EdTech, Real Estate, SaaS, and modern businesses.
                     </motion.p>
 
                     <motion.div
@@ -104,16 +104,19 @@ export default function Hero() {
                         >
                             <div className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-out" />
                             <span className="relative flex items-center gap-2">
-                                Get a Free Consultation <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                                Book a Strategy Call <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                             </span>
                         </button>
 
                         <button
-                            onClick={() => window.dispatchEvent(new CustomEvent("open-lead-form", { detail: "Hero - Free Growth Audit" }))}
+                            onClick={() => {
+                                const element = document.getElementById("work");
+                                element?.scrollIntoView({ behavior: "smooth" });
+                            }}
                             className="group inline-flex items-center justify-center gap-3 px-8 py-4 bg-transparent border border-white/20 text-white rounded-full font-semibold transition-all hover:bg-white/5 hover:border-white/40 w-full sm:w-auto"
                         >
                             <BarChart2 className="w-5 h-5 text-growth" />
-                            View Our Work
+                            Explore Case Studies
                         </button>
                     </motion.div>
 
@@ -126,7 +129,7 @@ export default function Hero() {
                     >
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-growth animate-pulse" />
-                            <span>4,500+ Leads Generated</span>
+                            <span>4,500+ Qualified Inquiries</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
@@ -134,7 +137,7 @@ export default function Hero() {
                         </div>
                         <div className="flex items-center gap-2">
                             <div className="w-2 h-2 rounded-full bg-cyan-400 animate-pulse" />
-                            <span>Global Clientele</span>
+                            <span>Next.js & Cloud Architecture</span>
                         </div>
                     </motion.div>
                 </div>

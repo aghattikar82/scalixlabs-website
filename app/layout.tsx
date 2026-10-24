@@ -10,27 +10,24 @@ const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], variable: "--font-space
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.scalixlabs.in"),
   title: {
-    default: "Scalix Labs | Web Development & Custom Software Agency — Global",
+    default: "Scalix Labs | Web Development & Custom Software Engineering Agency",
     template: "%s | Scalix Labs",
   },
   description:
-    "Scalix Labs is a global web development and custom software engineering agency. We build high-performance websites, SaaS platforms, and custom web applications using Next.js, React & modern tech. Serving clients in the US, UK, UAE, Europe & India.",
+    "Scalix Labs is a web development and custom software engineering agency. We build high-performance websites, SaaS platforms, and custom digital systems across EdTech, Real Estate, Co-Living, and modern businesses.",
   keywords: [
     "web development company",
     "custom software development",
     "Next.js development agency",
     "React development company",
+    "real estate website development",
+    "edtech platform development",
     "web application development",
     "SaaS development company",
     "hire web developers",
-    "custom web application development",
-    "software development agency",
     "website design and development",
     "performance marketing agency",
     "lead generation agency",
-    "conversion-focused web development",
-    "global web development agency",
-    "full-stack development company",
     "Scalix Labs",
   ],
   authors: [{ name: "Scalix Labs", url: "https://www.scalixlabs.in" }],
@@ -54,13 +51,13 @@ export const metadata: Metadata = {
     siteName: "Scalix Labs",
     title: "Scalix Labs — Web Development & Custom Software Agency",
     description:
-      "We build high-performance websites, custom web applications, and scalable digital growth systems for businesses worldwide. Next.js, React, Node.js experts.",
+      "We build high-performance websites, custom web applications, and scalable digital growth systems for modern businesses.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/logo.png",
         width: 1200,
         height: 630,
-        alt: "Scalix Labs — Global Web Development & Custom Software Agency",
+        alt: "Scalix Labs — Web Development & Custom Software Agency",
       },
     ],
   },
@@ -68,18 +65,13 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Scalix Labs — Web Development & Custom Software Agency",
     description:
-      "We build high-performance websites, custom web applications, and scalable digital growth systems for businesses worldwide.",
+      "We build high-performance websites, custom web applications, and scalable digital growth systems for modern businesses.",
     site: "@scalixlabs",
     creator: "@scalixlabs",
-    images: ["/og-image.png"],
+    images: ["/logo.png"],
   },
   alternates: {
     canonical: "https://www.scalixlabs.in",
-    languages: {
-      "en-US": "https://www.scalixlabs.in",
-      "en-GB": "https://www.scalixlabs.in",
-      "en-IN": "https://www.scalixlabs.in",
-    },
   },
   category: "technology",
 };
@@ -93,7 +85,7 @@ const organizationSchema = {
   url: "https://www.scalixlabs.in",
   logo: "https://www.scalixlabs.in/logo.png",
   description:
-    "Scalix Labs is a global web development and custom software engineering agency. We build high-performance, conversion-focused websites, custom web applications, SaaS platforms, and scalable digital growth systems using Next.js, React, Node.js, and AI-powered tools. Serving clients in the US, UK, UAE, Europe, and India.",
+    "Scalix Labs is a web development and custom software engineering agency. We build high-performance, conversion-focused websites, custom web applications, SaaS platforms, and scalable digital growth systems using Next.js, React, Node.js, and AI-powered tools.",
   foundingDate: "2024",
   sameAs: [
     "https://www.linkedin.com/company/scalixlabs/",
@@ -110,18 +102,7 @@ const organizationSchema = {
       contactType: "sales",
       url: "https://www.scalixlabs.in/#contact",
       availableLanguage: ["English", "Hindi"],
-      areaServed: ["US", "GB", "AE", "IN", "CA", "AU", "DE", "SG"],
     },
-  ],
-  areaServed: [
-    { "@type": "Country", name: "United States" },
-    { "@type": "Country", name: "United Kingdom" },
-    { "@type": "Country", name: "United Arab Emirates" },
-    { "@type": "Country", name: "India" },
-    { "@type": "Country", name: "Canada" },
-    { "@type": "Country", name: "Australia" },
-    { "@type": "Country", name: "Germany" },
-    { "@type": "Country", name: "Singapore" },
   ],
   knowsAbout: [
     "Web Development",
@@ -133,8 +114,8 @@ const organizationSchema = {
     "Performance Marketing",
     "SEO",
     "Lead Generation",
-    "SaaS Development",
-    "UI/UX Design",
+    "Real Estate Platforms",
+    "EdTech Platforms",
     "Conversion Rate Optimization",
   ],
 };
@@ -144,7 +125,7 @@ const websiteSchema = {
   "@type": "WebSite",
   name: "Scalix Labs",
   url: "https://www.scalixlabs.in",
-  description: "Global web development and custom software engineering agency",
+  description: "Web development and custom software engineering agency",
   publisher: {
     "@type": "Organization",
     name: "Scalix Labs",
@@ -164,7 +145,6 @@ const serviceSchema = {
       description:
         "High-performance, conversion-focused websites built with Next.js, React, and modern frameworks. Engineered for speed, SEO, and revenue generation.",
       provider: { "@type": "Organization", name: "Scalix Labs" },
-      areaServed: "Worldwide",
       serviceType: "Web Development",
     },
     {
@@ -172,9 +152,8 @@ const serviceSchema = {
       position: 2,
       name: "Custom Software Development",
       description:
-        "Bespoke web applications, SaaS platforms, CRM systems, and enterprise tools. Full-stack development with React, Node.js, PostgreSQL, and cloud infrastructure.",
+        "Bespoke web applications, SaaS platforms, CRM systems, and business tools. Full-stack development with React, Node.js, PostgreSQL, and cloud infrastructure.",
       provider: { "@type": "Organization", name: "Scalix Labs" },
-      areaServed: "Worldwide",
       serviceType: "Software Development",
     },
     {
@@ -184,7 +163,6 @@ const serviceSchema = {
       description:
         "Full-funnel performance advertising across Google, Meta, and LinkedIn designed to lower acquisition costs and scale ROI predictably.",
       provider: { "@type": "Organization", name: "Scalix Labs" },
-      areaServed: "Worldwide",
       serviceType: "Digital Marketing",
     },
     {
@@ -194,7 +172,6 @@ const serviceSchema = {
       description:
         "Automated marketing funnels that capture high-intent prospects and nurture them into qualified sales appointments with CRM integration.",
       provider: { "@type": "Organization", name: "Scalix Labs" },
-      areaServed: "Worldwide",
       serviceType: "Lead Generation",
     },
     {
@@ -204,7 +181,6 @@ const serviceSchema = {
       description:
         "Technical SEO audits, on-page optimization, keyword mapping, content architecture strategy, and long-term authority building for sustainable organic traffic.",
       provider: { "@type": "Organization", name: "Scalix Labs" },
-      areaServed: "Worldwide",
       serviceType: "Search Engine Optimization",
     },
   ],
@@ -219,15 +195,15 @@ const faqSchema = {
       name: "What services does Scalix Labs offer?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Scalix Labs offers custom web development using Next.js and React, custom software development for SaaS and enterprise applications, performance marketing across Google and Meta, automated lead generation systems, SEO and organic growth strategies, and AI-powered creative content production. We serve clients globally including the US, UK, UAE, Europe, and India.",
+        text: "Scalix Labs offers custom web development using Next.js and React, custom software development for web apps and business systems, performance marketing across Google and Meta, automated lead generation systems, SEO and organic growth strategies, and creative content production.",
       },
     },
     {
       "@type": "Question",
-      name: "Does Scalix Labs work with international clients?",
+      name: "Does Scalix Labs collaborate with clients and projects?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes, Scalix Labs serves clients worldwide. We have worked with businesses across the United States, United Kingdom, United Arab Emirates, Europe, Australia, Singapore, and India. Our team operates across time zones to provide seamless collaboration for international projects.",
+        text: "Yes, Scalix Labs is open to collaborate and work with founders, startups, and growing enterprises across EdTech, Real Estate, SaaS, Co-Living, E-Commerce, and modern service sectors.",
       },
     },
     {
@@ -235,31 +211,15 @@ const faqSchema = {
       name: "What technologies does Scalix Labs use for web development?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We specialize in modern web technologies including Next.js, React, TypeScript, Node.js, Tailwind CSS, Prisma ORM, PostgreSQL, and Vercel deployment. We also integrate AI/ML tools and automation platforms like n8n for workflow optimization.",
+        text: "We specialize in modern web technologies including Next.js, React, TypeScript, Node.js, Tailwind CSS, Prisma ORM, PostgreSQL, and Vercel deployment.",
       },
     },
     {
       "@type": "Question",
-      name: "How much does it cost to build a website with Scalix Labs?",
+      name: "What case studies has Scalix Labs delivered?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Our services start from $199/month (₹17,999/month) for basic growth campaigns. Pro plans start at $349/month (₹29,999/month) for full-scale marketing and development. Premium growth partner plans start at $449/month (₹39,999/month) with dedicated strategists. Custom software development projects are quoted based on scope and requirements.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "Can Scalix Labs build custom software and SaaS applications?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Yes, Scalix Labs specializes in building custom web applications, SaaS platforms, CRM systems, admin dashboards, and enterprise tools from scratch. We handle everything from UI/UX design to full-stack development, deployment, and ongoing maintenance using modern cloud-native architectures.",
-      },
-    },
-    {
-      "@type": "Question",
-      name: "What results has Scalix Labs achieved for clients?",
-      acceptedAnswer: {
-        "@type": "Answer",
-        text: "Scalix Labs has generated over 4,500 leads for clients, managed 12+ growth campaigns, and achieved an average client growth rate of 150%. Our work includes building the Yukta Verse digital learning platform from scratch, which achieved high performance scores and integrated conversion-optimized architecture.",
+        text: "Scalix Labs has delivered multiple notable platforms including YUKTA VERSE (an AI & Tech learning platform with 150% growth), SLN Homes (a high-converting co-living and 1 BHK rental platform in Bengaluru with +240% inquiries), and V2 Properties (a luxury real estate discovery and investment portal).",
       },
     },
   ],
